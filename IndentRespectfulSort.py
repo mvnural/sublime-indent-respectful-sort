@@ -1,17 +1,20 @@
 import sublime, sublime_plugin, sys
 
 class IndentRespectfulSortCommand(sublime_plugin.TextCommand):
-	def run(self, edit, **args):
-		
-		#self.view.insert(edit, 0, "Hello, World!")
-		region = sublime.Region(0, self.view.size())
-		#lines = self.view.lines(region)
-		content = self.view.substr(sublime.Region(0, self.view.size()))
-		lines = content.split("\n")
-		rootNode = RootNode(lines, args.get("indent","\t"), 0, int(args.get("maxDepth", sys.maxint)) - 1 , int(args.get("onlyDepth", None)) - 1)
-       
-		self.view.erase(edit, region)
-		self.view.insert(edit, 0, str(rootNode))
+    def run(self, edit, **args):
+        #self.view.insert(edit, 0, "Hello, World!")
+        region = sublime.Region(0, self.view.size())
+        #lines = self.view.lines(region)
+        content = self.view.substr(sublime.Region(0, self.view.size()))
+        lines = content.split("\n")
+        onlyDepth = args.get("onlyDepth", None)
+        if onlyDepth is not None:
+            onlyDepth = int(onlyDepth) - 1
+
+        rootNode = RootNode(lines, args.get("indent","\t"), 0, int(args.get("maxDepth", sys.maxint)) , onlyDepth)
+
+        self.view.erase(edit, region)
+        self.view.insert(edit, 0, str(rootNode))
 
 class RootNode:
     def __init__(self, content, indent, level, maxDepth, onlyDepth):
