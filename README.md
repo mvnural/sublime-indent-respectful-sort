@@ -1,7 +1,7 @@
 # About
 Indent Respectful Sort is a Sublime Text plugin that provides sort functionality while respecting the block structure defined by indendation.
 
-You may find this plugin useful when you have a consistently indented( all tabs or all 4 spaces etc.) file would like to sort logical blocks (methods, classes or unordered lists) while maintaining inner structure of the blocks.
+You may find this plugin useful when you have a consistently indented (all tabs or all 4 spaces etc.) file and would like to sort logical blocks (methods, classes or unordered lists) while maintaining inner structure of the blocks.
 
 Note that this approach would only work in cases where indentation is not only present for readability but also for **dictating** the structure. 
 
