@@ -5,6 +5,16 @@
     "args": {"indent": "  "}
   },
   {
+    "caption": "Indent Respectful Sort: Indented by 2 Spaces & Max Depth = 2",
+    "command": "indent_respectful_sort", 
+    "args": {"indent": "  ", "maxDepth": "2"}
+  },
+  {
+    "caption": "Indent Respectful Sort: Indented by 2 Spaces & Only Third Level",
+    "command": "indent_respectful_sort", 
+    "args": {"indent": "  ", "onlyDepth": "3"}
+  },
+  {
     "caption": "Indent Respectful Sort: Indented by 4 Spaces",
     "command": "indent_respectful_sort", 
     "args": {"indent": "    "}
@@ -18,10 +28,5 @@
     "caption": "Indent Respectful Sort: Indented by a Tab & Max Depth = 2",
     "command": "indent_respectful_sort", 
     "args": {"indent": "\t", "maxDepth": "2"}
-  },
-  {
-    "caption": "Indent Respectful Sort: Indented by 2 Spaces & Only Root Level",
-    "command": "indent_respectful_sort", 
-    "args": {"indent": "\t", "onlyDepth": "1"}
   }
 ]
