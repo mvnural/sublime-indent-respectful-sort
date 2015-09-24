@@ -10,12 +10,12 @@
     "args": {"indent": "    "}
   },
   {
-    "caption": "Indentation Respectful Sort: Indented by a Tab",
+    "caption": "Indent Respectful Sort: Indented by a Tab",
     "command": "indent_respectful_sort", 
     "args": {"indent": "\t"}
   },
   {
-    "caption": "Indentation Respectful Sort: Indented by a Tab & Max Depth = 2",
+    "caption": "Indent Respectful Sort: Indented by a Tab & Max Depth = 2",
     "command": "indent_respectful_sort", 
     "args": {"indent": "\t", "maxDepth": "2"}
   },
