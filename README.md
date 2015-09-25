@@ -52,6 +52,15 @@ You may run `IndentRespectfulSort` directly from the console if you need custom 
 - *indent*: Specify the indentation used in this file. (default: "\t")
 
 # Installation
+## Using Package Control
+IndentRespectfulSort can easily be installed via Package Control. 
+
+1. Make sure Package Control is installed. (See https://packagecontrol.io/installation).
+2. Press `ctrl + shift + p `(Win, Linux) or `cmd + shift + p` (OSX) to open command palette. Find and select `Package Control : Install Package` and hit `Enter`.
+3. In the newly opened panel, start typing `IndentRespectfulSort` and hit `Enter` after you have found and selected.
+4. Done!
+
+## Manual Installation
 1. Create a folder named `IndentRespectfulSort` in the sublime packages folder.
 2. Simply extract the contents of this repository into the newly created `IndentRespectfulSort` folder.
 
