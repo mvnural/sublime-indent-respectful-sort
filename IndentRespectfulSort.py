@@ -11,7 +11,7 @@ class IndentRespectfulSortCommand(sublime_plugin.TextCommand):
         if onlyDepth is not None:
             onlyDepth = int(onlyDepth) - 1
 
-        rootNode = RootNode(lines, args.get("indent","\t"), 0, int(args.get("maxDepth", sys.maxint)) , onlyDepth)
+        rootNode = RootNode(lines, args.get("indent","\t"), 0, int(args.get("maxDepth", sys.maxsize)) , onlyDepth)
 
         self.view.erase(edit, region)
         self.view.insert(edit, 0, str(rootNode))
