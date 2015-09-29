@@ -64,3 +64,5 @@ IndentRespectfulSort can easily be installed via Package Control.
 1. Create a folder named `IndentRespectfulSort` in the sublime packages folder.
 2. Simply extract the contents of this repository into the newly created `IndentRespectfulSort` folder.
 
+# Bugs / Feature Requests
+You may create a new issue at https://github.com/mvnural/sublime-indent-respectful-sort/issues 
