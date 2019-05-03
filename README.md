@@ -51,6 +51,19 @@ You may run `IndentRespectfulSort` directly from the console if you need custom 
 - *onlyDepth*: Only sort the blocks in the level specified by this argument. If *onlyDepth* is specified, then *maxDepth* is ignored. (default: None)
 - *indent*: Specify the indentation used in this file. (default: "\t")
 
+### Adding a custom sort command to Command Palette
+
+1. Open your user command palette file. It will be located in your Packages directory, see: http://docs.sublimetext.info/en/latest/basic_concepts.html, at Packages/User/Default.sublime-commands.
+2. Follow instructions here for adding new items: http://docs.sublimetext.info/en/latest/reference/command_palette.html
+
+Example:
+
+    	{
+    		"caption": "Alphabetize i18n",
+    		"command": "indent_respectful_sort",
+    		"args": {"onlyDepth": 3}
+    	}
+
 # Installation
 ## Using Package Control
 IndentRespectfulSort can easily be installed via Package Control. 
